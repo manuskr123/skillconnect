@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful - SkillConnect India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <span>🎯</span>
+        SkillConnect India
+      </div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== SUCCESS CONTENT ==================== -->
+  <section style="padding: 80px 2rem; background: linear-gradient(135deg, rgba(39, 174, 96, 0.05) 0%, rgba(26, 188, 156, 0.05) 100%); min-height: 100vh; display: flex; align-items: center;">
+    <div class="success-container">
+      <!-- Success Icon -->
+      <div class="success-icon">
+        ✓
+      </div>
+
+      <!-- Success Message -->
+      <div class="success-message">
+        <h2>Payment Successful!</h2>
+        <p>Your booking request has been successfully submitted. The professional will contact you shortly to discuss project details.</p>
+      </div>
+
+      <!-- Transaction Details -->
+      <div class="transaction-card">
+        <div class="transaction-row">
+          <span class="transaction-label">Transaction ID:</span>
+          <span class="transaction-value" id="transactionId">TXN20240507123456789</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Transaction Date & Time:</span>
+          <span class="transaction-value" id="transactionDate">5/7/2024, 10:30 AM</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Professional Name:</span>
+          <span class="transaction-value">Skilled Professional</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Service Category:</span>
+          <span class="transaction-value">Professional Services</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Booking Date:</span>
+          <span class="transaction-value">5/7/2024</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Payment Amount:</span>
+          <span class="transaction-amount">₹5,000</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Payment Method:</span>
+          <span class="transaction-value">Credit/Debit Card</span>
+        </div>
+
+        <div class="transaction-row">
+          <span class="transaction-label">Status:</span>
+          <span class="transaction-value" style="color: #27AE60; font-weight: 700;">✓ Successful</span>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div style="background: var(--white); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
+        <h4 style="color: var(--primary); margin-bottom: 1rem;">📋 What Happens Next?</h4>
+        <ul style="color: var(--gray); margin-left: 1.5rem;">
+          <li>Your booking confirmation has been sent to your email</li>
+          <li>The professional will review your requirements</li>
+          <li>You'll receive a message from the professional within 24 hours</li>
+          <li>Project discussion and timeline will be finalized</li>
+          <li>Work will begin once all details are confirmed</li>
+        </ul>
+      </div>
+
+      <!-- Security Message -->
+      <div style="background: linear-gradient(135deg, rgba(0, 78, 137, 0.05) 0%, rgba(26, 188, 156, 0.05) 100%); border: 1px solid rgba(0, 78, 137, 0.2); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem;">
+        <p style="color: var(--gray); margin: 0; text-align: center;">
+          🔒 <strong>Secure Transaction:</strong> Your payment information is encrypted and secure. A confirmation receipt has been sent to your registered email address.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button id="printBtn" class="btn btn-secondary">📄 Print Receipt</button>
+        <button id="homeBtn" class="btn btn-primary">← Return to Homepage</button>
+      </div>
+
+      <!-- Download Reminder -->
+      <p style="text-align: center; color: var(--gray); margin-top: 2rem; font-size: 0.9rem;">
+        Keep your transaction ID for future reference: <strong id="referenceId">TXN20240507123456789</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About SkillConnect</h4>
+        <p>Connecting talented professionals with clients across India. We believe in quality, transparency, and professional excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+          <li><a href="services.html">App Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">📷</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SkillConnect India. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

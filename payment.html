@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - SkillConnect India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <span>🎯</span>
+        SkillConnect India
+      </div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section style="background: linear-gradient(135deg, rgba(0, 78, 137, 0.1) 0%, rgba(26, 188, 156, 0.1) 100%); padding: 40px 2rem;">
+    <div class="container">
+      <h1 style="font-size: 2rem; text-align: center;">Secure Payment Checkout</h1>
+    </div>
+  </section>
+
+  <!-- ==================== PAYMENT SECTION ==================== -->
+  <section style="padding: 60px 2rem; background: var(--light);">
+    <div class="payment-container">
+      <!-- Payment Card -->
+      <div>
+        <h3 style="margin-bottom: 2rem;">Payment Card</h3>
+        <div class="payment-card">
+          <div class="card-logo">💳 SkillConnect</div>
+          <div class="card-chip"></div>
+          <div class="card-number" id="displayCardNumber">•••• •••• •••• ••••</div>
+          <div class="card-details">
+            <div class="card-holder">
+              <small>Cardholder Name</small><br>
+              <span id="displayCardName">JOHN DOE</span>
+            </div>
+            <div class="card-expiry">
+              <small>Valid Thru</small><br>
+              <span id="displayCardExpiry">12/25</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Summary -->
+        <div class="card" style="margin-top: 2rem;">
+          <h4 style="margin-bottom: 1rem;">Service Summary</h4>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--light);">
+            <span>Professional:</span>
+            <strong id="providerName">Service Provider</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--light);">
+            <span>Service Type:</span>
+            <strong>Professional Services</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--light);">
+            <span>Duration:</span>
+            <strong>Project Based</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 700; color: var(--primary);">
+            <span>Total Amount:</span>
+            <span>₹5,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Form -->
+      <div>
+        <div class="payment-form">
+          <h3 style="margin-bottom: 1.5rem;">Payment Details</h3>
+
+          <!-- Payment Methods -->
+          <h4 style="margin-bottom: 1rem;">Select Payment Method</h4>
+          <div class="payment-methods">
+            <div class="payment-method active" onclick="this.classList.add('active'); document.querySelectorAll('.payment-method').forEach(m => {if(m !== this) m.classList.remove('active')})">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💳</div>
+              <small>Debit/Credit Card</small>
+            </div>
+            <div class="payment-method" onclick="this.classList.add('active'); document.querySelectorAll('.payment-method').forEach(m => {if(m !== this) m.classList.remove('active')})">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📱</div>
+              <small>UPI</small>
+            </div>
+            <div class="payment-method" onclick="this.classList.add('active'); document.querySelectorAll('.payment-method').forEach(m => {if(m !== this) m.classList.remove('active')})">
+              <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏦</div>
+              <small>Net Banking</small>
+            </div>
+          </div>
+
+          <!-- Card Details Form -->
+          <h4 style="margin: 2rem 0 1rem;">Card Information</h4>
+          
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+          </div>
+
+          <div class="form-group">
+            <label for="cardName">Cardholder Name</label>
+            <input type="text" id="cardName" placeholder="John Doe" onchange="document.getElementById('displayCardName').textContent = this.value.toUpperCase() || 'JOHN DOE'">
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="cardExpiry">Expiry Date</label>
+              <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" onchange="document.getElementById('displayCardExpiry').textContent = this.value || '12/25'">
+            </div>
+
+            <div class="form-group">
+              <label for="cardCVV">CVV</label>
+              <input type="password" id="cardCVV" placeholder="123" maxlength="4">
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div style="margin: 2rem 0; padding: 1rem; background: rgba(26, 188, 156, 0.05); border-radius: 8px;">
+            <input type="checkbox" id="agreeTerms" checked> 
+            <label for="agreeTerms" style="margin-left: 0.5rem;">I agree to the terms and conditions</label>
+          </div>
+
+          <!-- Security Badge -->
+          <div style="text-align: center; margin-bottom: 2rem; font-size: 0.9rem; color: var(--gray);">
+            <p>🔒 Your payment is secure and encrypted</p>
+          </div>
+
+          <!-- Pay Button -->
+          <button id="payBtn" class="btn btn-primary btn-block" style="padding: 14px; font-size: 1.1rem;">
+            Pay Now ₹5,000
+          </button>
+
+          <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+            <a href="services.html" style="color: var(--primary);">← Back to Services</a>
+          </p>
+        </div>
+
+        <!-- Safe Payment Info -->
+        <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, rgba(39, 174, 96, 0.05) 0%, rgba(26, 188, 156, 0.05) 100%); border: 1px solid rgba(39, 174, 96, 0.2);">
+          <h4 style="color: #27AE60; margin-bottom: 1rem;">✓ Safe & Secure Payment</h4>
+          <ul style="color: var(--gray); margin-left: 1.5rem;">
+            <li>SSL Encrypted Connection</li>
+            <li>PCI DSS Compliant</li>
+            <li>Money-Back Guarantee</li>
+            <li>Verified Professional Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About SkillConnect</h4>
+        <p>Connecting talented professionals with clients across India. We believe in quality, transparency, and professional excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+          <li><a href="services.html">App Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">📷</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SkillConnect India. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

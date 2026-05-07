@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SkillConnect India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <span>🎯</span>
+        SkillConnect India
+      </div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section style="background: linear-gradient(135deg, rgba(0, 78, 137, 0.1) 0%, rgba(26, 188, 156, 0.1) 100%); padding: 60px 2rem;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem;">Contact Us</h1>
+      <p style="text-align: center; font-size: 1.1rem; color: var(--gray); max-width: 600px; margin: 0 auto;">
+        Have questions? We'd love to hear from you. Get in touch with our team.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT CONTENT ==================== -->
+  <section style="padding: 80px 2rem;">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 4rem;">
+        <!-- Contact Form -->
+        <div>
+          <h2 style="margin-bottom: 2rem;">Send us a Message</h2>
+          <form onsubmit="validateContactForm(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">📍 Location</h4>
+            <p>SkillConnect India Headquarters<br>
+            Tech Park, Bangalore<br>
+            Karnataka 560001, India</p>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">📧 Email</h4>
+            <p><a href="mailto:support@skillconnect.com">support@skillconnect.com</a><br>
+            <a href="mailto:info@skillconnect.com">info@skillconnect.com</a></p>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">📞 Phone</h4>
+            <p><a href="tel:+918001234567">+91 800 123 4567</a><br>
+            <a href="tel:+918901234567">+91 890 123 4567</a></p>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🕒 Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 10:00 AM - 4:00 PM<br>
+            Sunday: Closed</p>
+          </div>
+
+          <div class="card">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Follow Us</h4>
+            <div class="footer-social">
+              <a href="#" class="social-icon">f</a>
+              <a href="#" class="social-icon">𝕏</a>
+              <a href="#" class="social-icon">in</a>
+              <a href="#" class="social-icon">📷</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAP SECTION ==================== -->
+  <section style="padding: 80px 2rem; background: var(--light);">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Find Us on the Map</h2>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, rgba(0, 78, 137, 0.1) 0%, rgba(26, 188, 156, 0.1) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(0, 78, 137, 0.2);">
+        <p style="color: var(--gray); font-size: 1.1rem;">📍 Interactive Map - Bangalore, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section style="padding: 80px 2rem;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ How do I hire a professional?</h4>
+          <p>Simply browse our services page, find the professional you're interested in, and click "Hire Now" or "View Profile" to learn more. Follow the simple booking and payment process.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ Are the professionals verified?</h4>
+          <p>Yes, all professionals on SkillConnect India undergo rigorous vetting. We verify their qualifications, experience, and client reviews to ensure quality.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ What if I'm not satisfied with the work?</h4>
+          <p>We have a customer satisfaction guarantee. If you're not happy with the results, contact our support team and we'll help resolve the issue.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ How are payments handled?</h4>
+          <p>We offer secure payment processing through multiple methods. Payments are held securely until the project is completed to your satisfaction.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ Can I communicate directly with the professional?</h4>
+          <p>Yes, once you book a professional, you can communicate with them through our secure messaging system to discuss project details.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">❓ Is my information safe?</h4>
+          <p>Absolutely. We use advanced security measures to protect your personal and payment information. Your privacy is our top priority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA SECTION ==================== -->
+  <section style="padding: 60px 2rem; background: var(--light); text-align: center;">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem;">Browse our professionals or reach out to learn more about how we can help.</p>
+      <a href="services.html" class="btn btn-primary">Browse Professionals</a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About SkillConnect</h4>
+        <p>Connecting talented professionals with clients across India. We believe in quality, transparency, and professional excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+          <li><a href="services.html">App Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">📷</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SkillConnect India. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

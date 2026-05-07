@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - SkillConnect India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <span>🎯</span>
+        SkillConnect India
+      </div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section style="background: linear-gradient(135deg, rgba(0, 78, 137, 0.1) 0%, rgba(26, 188, 156, 0.1) 100%); padding: 60px 2rem;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem;">Our Professional Services</h1>
+      <p style="text-align: center; font-size: 1.1rem; color: var(--gray); max-width: 600px; margin: 0 auto;">
+        Browse our extensive network of skilled professionals across India and find the perfect match for your project.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FILTER SECTION ==================== -->
+  <section style="padding: 40px 2rem;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Filter by Category</h2>
+        <p>Click on a category to filter professionals</p>
+      </div>
+      <div id="filterContainer" class="filter-container"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES GRID ==================== -->
+  <section style="padding: 40px 2rem; background: var(--light);">
+    <div class="container">
+      <div id="serviceGrid" class="grid grid-3"></div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING MODAL ==================== -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Booking Confirmation</h3>
+        <button class="modal-close" onclick="closeModal('bookingModal')">×</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About SkillConnect</h4>
+        <p>Connecting talented professionals with clients across India. We believe in quality, transparency, and professional excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+          <li><a href="services.html">App Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">📷</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SkillConnect India. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
